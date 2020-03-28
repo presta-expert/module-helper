@@ -281,12 +281,12 @@ abstract class AbstractModule extends Module
         }
 
         // Loop over each of tab
-        foreach ($this->getTabs() as $tab) {
+        foreach ($this->getTabs() as $tabArray) {
 
             // Creating tab
             $tab = new Tab();
-            $tab->id_parent = (int)Tab::getIdFromClassName($tab['parent']);
-            $tab->class_name = $tab['class'];
+            $tab->id_parent = (int)Tab::getIdFromClassName($tabArray['parent']);
+            $tab->class_name = $tabArray['class'];
             $tab->active = 1;
             $tab->module = $this->name;
 
@@ -294,7 +294,7 @@ abstract class AbstractModule extends Module
             foreach ($this->context->controller->getLanguages() as $lang) {
 
                 // Adding translation for each lang
-                $tab->name[(int)$lang['id_lang']] = $this->l($tab['name']);
+                $tab->name[(int)$lang['id_lang']] = $this->l($tabArray['name']);
             }
 
             // Trying to add new tab
@@ -354,10 +354,10 @@ abstract class AbstractModule extends Module
         }
 
         // Loop over each of tab
-        foreach ($this->getTabs() as $tab) {
+        foreach ($this->getTabs() as $tabArray) {
 
             // Creating tab
-            $tab = new Tab((int)Tab::getIdFromClassName($tab['class']));
+            $tab = new Tab((int)Tab::getIdFromClassName($tabArray['class']));
 
             // Trying to remove tab
             if (!$tab->delete()) {
