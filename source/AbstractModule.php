@@ -35,7 +35,7 @@ use Configuration;
  *
  * @author      ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
  * @copyright   ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
- * @version     1.0.3
+ * @version     1.0.4
  */
 abstract class AbstractModule extends Module
 {
@@ -72,7 +72,7 @@ abstract class AbstractModule extends Module
      *
      * @var string
      */
-    public $author = 'ASOCIAL MEDIA | biuro@asocial.media';
+    public $author = 'biuro@asocial.media';
 
     /**
      * Module tab / category
