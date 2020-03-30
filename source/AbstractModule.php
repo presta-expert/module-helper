@@ -35,7 +35,7 @@ use Configuration;
  *
  * @author      ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
  * @copyright   ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
- * @version     1.0.0
+ * @version     1.0.3
  */
 abstract class AbstractModule extends Module
 {
@@ -289,6 +289,11 @@ abstract class AbstractModule extends Module
             $tab->class_name = $tabArray['class'];
             $tab->active = 1;
             $tab->module = $this->name;
+
+            // Creating hidden tab
+            if ($tabArray['parent'] < 0) {
+                $tab->id_parent = -1;
+            }
 
             // Creating translations
             foreach ($this->context->controller->getLanguages() as $lang) {
