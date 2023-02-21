@@ -1,14 +1,14 @@
 {
-    "name": "asocial-media/prestashop-module-helper",
+    "name": "presta-expert/module-helper",
     "type": "library",
     "description": "Helper which you may use when creating your custom modules instead of using standard prestashop Module class",
     "keywords": ["prestashop", "module", "overwrite", "extended"],
-    "homepage": "https://asocial.media",
+    "homepage": "https://presta.expert",
     "license": "MIT",
     "authors": [
         {
             "name": "Maciej Strączkowski",
-            "email": "biuro@asocial.media"
+            "email": "support@presta.expert"
         }
     ],
     "require": {
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AsocialMedia\\Prestashop\\Helper\\": "source/"
+            "PrestaExpert\\Helper\\": "source/"
         }
     }
 }
