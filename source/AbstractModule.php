@@ -2,7 +2,7 @@
 /**
  * Namespace declaration
  */
-namespace AsocialMedia\Prestashop\Helper;
+namespace PrestaExpert\Helper;
 
 /**
  * Checking if module is executed in prestashop context
@@ -33,9 +33,9 @@ use Configuration;
  * module uses it to keep getFrontOfficeMedia() and
  * getBackOfficeMedia() working.
  *
- * @author      ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
- * @copyright   ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
- * @version     1.0.4
+ * @author      Presta.Expert Team <support@presta.expert>
+ * @copyright   Presta.Expert Team <support@presta.expert>
+ * @version     1.0.5
  */
 abstract class AbstractModule extends Module
 {
@@ -72,7 +72,7 @@ abstract class AbstractModule extends Module
      *
      * @var string
      */
-    public $author = 'biuro@asocial.media';
+    public $author = 'support@presta.expert';
 
     /**
      * Module tab / category

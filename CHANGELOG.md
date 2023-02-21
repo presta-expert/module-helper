@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.5 (2023-02-21)
+
+- Rebranding to PrestaExpert
+
 ## 1.0.4 (2020-03-30)
 
 - Changed default module author because it looks ugly at prestashop 1.7

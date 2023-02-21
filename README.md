@@ -16,7 +16,7 @@ I plan to add more options in the future including simplification for creating c
 ### Composer (recommended)
 
 ```bash
-$ composer require asocial-media/prestashop-module-helper
+$ composer require presta-expert/module-helper
 ```
 
 ## Basic usage
@@ -38,7 +38,7 @@ require __DIR__ . '/vendor/autoload.php';
 /**
  * Your module description
  */
-class MyCustomModule extends \AsocialMedia\Prestashop\Helper\AbstractModule
+class MyCustomModule extends \PrestaExpert\Helper\AbstractModule
 {
     /**
      * Setting your module details
@@ -218,7 +218,7 @@ class MyCustomModule extends \AsocialMedia\Prestashop\Helper\AbstractModule
 
 ## Authors
 
-- Maciej Strączkowski - <biuro@asocial.media>
+- [Presta.Expert](https://presta.expert) Team
 
 ## License
 
